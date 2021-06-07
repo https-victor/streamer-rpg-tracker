@@ -5,7 +5,7 @@ name: Firebase CI - Production
 
 on:
   push:
-    branches: [ production ]
+    branches: [ stage ]
 
 jobs:
   build:
