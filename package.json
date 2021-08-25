@@ -5,16 +5,17 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "react": "^17.0.2",
+    "env-cmd": "^10.1.0",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.0"
   },
   "scripts": {
-    "start": "set REACT_APP_ENV=local && react-scripts start",
-    "dev": "set REACT_APP_ENV=development && react-scripts build",
-    "stage": "set REACT_APP_ENV=stage && react-scripts build",
-    "prod": "set REACT_APP_ENV=production && react-scripts build",
+    "start": "env-cmd -e local react-scripts start",
+    "dev": "env-cmd -e development react-scripts build",
+    "stage": "env-cmd -e stage react-scripts build",
+    "prod": "env-cmd -e production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
