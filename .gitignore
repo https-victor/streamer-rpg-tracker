@@ -14,14 +14,14 @@
 
 # misc
 .DS_Store
-.env
-.env.js
-.env.json
-.env-cmdrc
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+# .env
+# .env.js
+# .env.json
+# .env-cmdrc
+# .env.local
+# .env.development.local
+# .env.test.local
+# .env.production.local
 /src/react-app-env.d.ts
 
 npm-debug.log*
